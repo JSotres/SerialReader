@@ -36,6 +36,9 @@
     <property name="text">
      <string>Start</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="btn_clear">
     <property name="geometry">
@@ -63,7 +66,7 @@
      <string>Save Data</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="cbx_port">
+   <widget class="QComboBox" name="cbox_ports">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -73,7 +76,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QComboBox" name="cbx_baudRate">
+   <widget class="QComboBox" name="cbox_baud">
     <property name="geometry">
      <rect>
       <x>680</x>

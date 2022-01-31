@@ -33,8 +33,6 @@ private slots:
 
     void readSerial();
 
-    void updateSignalLabel(const QString);
-
     void on_btn_clear_clicked();
 
     void on_btn_saveData_clicked();
@@ -43,14 +41,15 @@ private:
     Ui::MainWindow *ui;
 
     QVector<double> qv_time, qv_signal;
+
     double t0;
 
     QSerialPort *external;
 
     QString serial_port_name;
-    //bool serial_is_available;
 
     QByteArray serialData;
+
     QString serialBuffer;
 };
 #endif // MAINWINDOW_H

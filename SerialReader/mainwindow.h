@@ -16,13 +16,14 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+// Definition of the calss for the software ui
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    MainWindow(QWidget *parent = nullptr); // Constructor
+    ~MainWindow();  // Destructor
 
     void addPoint(double x, double y);
     void clearData();
@@ -31,11 +32,11 @@ public:
 private slots:
     void on_btn_getData_clicked();
 
-    void readSerial();
-
     void on_btn_clear_clicked();
 
     void on_btn_saveData_clicked();
+
+    void readSerial();
 
 private:
     Ui::MainWindow *ui;
@@ -52,4 +53,5 @@ private:
 
     QString serialBuffer;
 };
+
 #endif // MAINWINDOW_H

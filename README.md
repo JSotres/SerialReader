@@ -10,4 +10,4 @@ Download (at least) and uncompress *SerialReaderWindows.rar*. There you can find
 
 Once you run the software, you will see the following GUI:
 
-![](./QuickStartFigure.jpg)
+![](./SerialReader/QuickStartFigure.jpg)
